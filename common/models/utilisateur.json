@@ -1,0 +1,116 @@
+{
+  "name": "Utilisateur",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "matricule": {
+      "type": "string",
+      "required": false
+    },
+    "nom": {
+      "type": "string",
+      "required": true
+    },
+    "prenom": {
+      "type": "string",
+      "required": true
+    },
+    "telephone": {
+      "type": "string",
+      "required": false
+    },
+    "typeTravail": {
+      "type": "string"
+    },
+    "actif": {
+      "type": "boolean"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "accounts": {
+      "type": "hasOne",
+      "model": "Account",
+      "foreignKey": ""
+    },
+    "messages": {
+      "type": "hasMany",
+      "model": "Message",
+      "foreignKey": ""
+    },
+    "rapports": {
+      "type": "hasMany",
+      "model": "Rapport",
+      "foreignKey": ""
+    },
+    "notifications": {
+      "type": "hasMany",
+      "model": "Notification",
+      "foreignKey": ""
+    },
+    "taskAdded": {
+      "type": "hasMany",
+      "model": "Tache",
+      "foreignKey": "taskAddedId"
+    },
+    "affecterTaches": {
+      "type": "hasMany",
+      "model": "Tache",
+      "foreignKey": "technicienId",
+      "through": "AffectationTache"
+    },
+    "responsableTasks": {
+      "type": "hasMany",
+      "model": "Tache",
+      "foreignKey": "responsableTaskId"
+    },
+    "niveauTI": {
+      "type": "belongsTo",
+      "model": "NiveauTI",
+      "foreignKey": ""
+    },
+    "affectationTaches": {
+      "type": "hasMany",
+      "model": "AffectationTache",
+      "foreignKey": "technicienId"
+    },
+    "loggerTaches": {
+      "type": "hasMany",
+      "model": "LoggerTache",
+      "foreignKey": "utilisateurId"
+    },
+    "taches": {
+      "type": "hasMany",
+      "model": "Tache",
+      "foreignKey": "utilisateurId",
+      "through": "LoggerTache"
+    },
+    "demandeICFs": {
+      "type": "hasMany",
+      "model": "DemandeICF",
+      "foreignKey": ""
+    },
+    "loggerDemandeInternes": {
+      "type": "hasMany",
+      "model": "LoggerDemandeInterne",
+      "foreignKey": ""
+    },
+    "sCQControles": {
+      "type": "hasMany",
+      "model": "SCQControle",
+      "foreignKey": ""
+    }
+  },
+  "acls": [
+    {
+      "accessType": "*",
+      "principalType": "ROLE",
+      "principalId": "$unauthenticated",
+      "permission": "DENY"
+    }
+  ],
+  "methods": {}
+}

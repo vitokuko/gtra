@@ -1,0 +1,54 @@
+{
+  "_meta": {
+    "sources": [
+      "loopback/common/models",
+      "loopback/server/models",
+      "../common/models",
+      "./models"
+    ],
+    "mixins": [
+      "loopback/common/mixins",
+      "loopback/server/mixins",
+      "../common/mixins",
+      "./mixins"
+    ]
+  },
+  "User": {
+    "dataSource": "gtradb",
+    "public": false
+  },
+  "AccessToken": {
+    "dataSource": "gtradb",
+    "public": false
+  },
+  "ACL": {
+    "dataSource": "gtradb",
+    "public": false
+  },
+  "RoleMapping": {
+    "dataSource": "gtradb",
+    "public": false,
+    "options": {
+      "strictObjectIDCoercion": true
+    }
+  },
+  "Role": {
+    "dataSource": "gtradb",
+    "public": true
+  },
+  "Categorie": {
+    "dataSource": "gtradb",
+    "public": true
+  },
+  "Utilisateur": {
+    "dataSource": "gtradb",
+    "public": true
+  },
+  "Account": {
+    "dataSource": "gtradb",
+    "public": true,
+    "options": {
+      "emailVerificationRequired": false
+    }
+  }
+}

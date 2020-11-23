@@ -1,0 +1,16 @@
+{
+  "db": {
+    "name": "db",
+    "connector": "memory"
+  },
+  "gtradb": {
+    "host": "localhost",
+    "port": 27017,
+    "database": "gtradb",
+    "password": "",
+    "name": "gtradb",
+    "user": "",
+    "useNewUrlParser": true,
+    "connector": "mongodb"
+  }
+}
