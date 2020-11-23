@@ -6,10 +6,6 @@
     "validateUpsert": true
   },
   "properties": {
-    "matricule": {
-      "type": "string",
-      "required": false
-    },
     "nom": {
       "type": "string",
       "required": true
