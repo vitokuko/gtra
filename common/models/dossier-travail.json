@@ -1,0 +1,79 @@
+{
+  "name": "DossierTravail",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "kilometrage": {
+      "type": "number",
+      "required": true
+    },
+    "motifDemande": {
+      "type": "string",
+      "required": true
+    },
+    "disponibiliteVehicule": {
+      "type": "string",
+      "required": true
+    },
+    "descriptionSommaire": {
+      "type": "string",
+      "required": true
+    },
+    "naturePrestation": {
+      "type": "string",
+      "required": true
+    },
+    "coutPrestation": {
+      "type": "String",
+      "required": true
+    },
+    "nomFournisseur": {
+      "type": "string",
+      "required": true
+    },
+    "numeroDA": {
+      "type": "number",
+      "required": true
+    },
+    "numeroBonCommande": {
+      "type": "number",
+      "required": true
+    },
+    "dateNotificationFournisseur": {
+      "type": "date",
+      "required": true
+    },
+    "dateFinTravaux": {
+      "type": "date",
+      "required": true
+    },
+    "dateLivraison": {
+      "type": "date",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "vehicule": {
+      "type": "belongsTo",
+      "model": "Vehicule",
+      "foreignKey": "",
+      "options": {
+        "nestRemoting": true
+      }
+    },
+    "utilisateur": {
+      "type": "belongsTo",
+      "model": "Utilisateur",
+      "foreignKey": "",
+      "options": {
+        "nestRemoting": true
+      }
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

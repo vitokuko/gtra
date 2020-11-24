@@ -1,0 +1,93 @@
+{
+  "name": "Vehicule",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "immatriculation": {
+      "type": "string",
+      "required": true
+    },
+    "dateDeMiseenCirculation": {
+      "type": "date",
+      "required": true
+    },
+    "nombrePlace": {
+      "type": "number",
+      "required": true
+    },
+    "amortissement": {
+      "type": "number",
+      "required": true
+    },
+    "ancienneteMois": {
+      "type": "number",
+      "required": true
+    },
+    "ancienneteAnnee": {
+      "type": "number",
+      "required": true
+    },
+    "etat": {
+      "type": "string",
+      "required": true
+    },
+    "visiteTechnique": {
+      "type": "date",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "parking": {
+      "type": "belongsTo",
+      "model": "Parking",
+      "foreignKey": ""
+    },
+    "categorie": {
+      "type": "belongsTo",
+      "model": "Categorie",
+      "foreignKey": ""
+    },
+    "marque": {
+      "type": "belongsTo",
+      "model": "Marque",
+      "foreignKey": ""
+    },
+    "modele": {
+      "type": "belongsTo",
+      "model": "Modele",
+      "foreignKey": ""
+    },
+    "dossierTravails": {
+      "type": "hasMany",
+      "model": "DossierTravail",
+      "foreignKey": ""
+    },
+    "direction": {
+      "type": "belongsTo",
+      "model": "Direction",
+      "foreignKey": ""
+    },
+    "utilisateur": {
+      "type": "belongsTo",
+      "model": "Utilisateur",
+      "foreignKey": ""
+    },
+    "fournisseurs": {
+      "type": "hasMany",
+      "model": "Fournisseur",
+      "foreignKey": "",
+      "through": "Depannage"
+    },
+    "depannages": {
+      "type": "hasMany",
+      "model": "Depannage",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

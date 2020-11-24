@@ -1,0 +1,37 @@
+{
+  "name": "Depannage",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "periodeDepannage": {
+      "type": "number",
+      "required": true
+    },
+    "natureTravaux": {
+      "type": "string",
+      "required": true
+    },
+    "coutTravaux": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "vehicule": {
+      "type": "belongsTo",
+      "model": "Vehicule",
+      "foreignKey": ""
+    },
+    "fournisseur": {
+      "type": "belongsTo",
+      "model": "Fournisseur",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

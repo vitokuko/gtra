@@ -98,6 +98,30 @@
       "type": "hasMany",
       "model": "SCQControle",
       "foreignKey": ""
+    },
+    "direction": {
+      "type": "belongsTo",
+      "model": "Direction",
+      "foreignKey": "",
+      "options": {
+        "nestRemoting": true
+      }
+    },
+    "vehicules": {
+      "type": "hasMany",
+      "model": "Vehicule",
+      "foreignKey": "",
+      "options": {
+        "nestRemoting": true
+      }
+    },
+    "dossierTravails": {
+      "type": "hasMany",
+      "model": "DossierTravail",
+      "foreignKey": "",
+      "options": {
+        "nestRemoting": true
+      }
     }
   },
   "acls": [

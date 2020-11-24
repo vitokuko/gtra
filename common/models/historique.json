@@ -1,27 +1,18 @@
 {
-  "name": "Categorie",
+  "name": "Historique",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
     "validateUpsert": true
   },
   "properties": {
-    "libelle": {
+    "cycleDeVie": {
       "type": "string",
       "required": true
     }
   },
   "validations": [],
-  "relations": {
-    "vehicules": {
-      "type": "hasMany",
-      "model": "Vehicule",
-      "foreignKey": "",
-      "options": {
-        "nestRemoting": true
-      }
-    }
-  },
+  "relations": {},
   "acls": [],
   "methods": {}
 }

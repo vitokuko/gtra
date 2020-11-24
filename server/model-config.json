@@ -50,5 +50,41 @@
     "options": {
       "emailVerificationRequired": false
     }
+  },
+  "Vehicule": {
+    "dataSource": "gtradb",
+    "public": true
+  },
+  "Parking": {
+    "dataSource": "gtradb",
+    "public": true
+  },
+  "Marque": {
+    "dataSource": "gtradb",
+    "public": true
+  },
+  "Modele": {
+    "dataSource": "gtradb",
+    "public": true
+  },
+  "Direction": {
+    "dataSource": "gtradb",
+    "public": true
+  },
+  "DossierTravail": {
+    "dataSource": "gtradb",
+    "public": true
+  },
+  "Fournisseur": {
+    "dataSource": "gtradb",
+    "public": true
+  },
+  "Historique": {
+    "dataSource": "gtradb",
+    "public": true
+  },
+  "Depannage": {
+    "dataSource": "gtradb",
+    "public": true
   }
 }

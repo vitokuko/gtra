@@ -1,5 +1,5 @@
 {
-  "name": "Categorie",
+  "name": "Modele",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
@@ -16,6 +16,14 @@
     "vehicules": {
       "type": "hasMany",
       "model": "Vehicule",
+      "foreignKey": "",
+      "options": {
+        "nestRemoting": true
+      }
+    },
+    "marque": {
+      "type": "belongsTo",
+      "model": "Marque",
       "foreignKey": "",
       "options": {
         "nestRemoting": true

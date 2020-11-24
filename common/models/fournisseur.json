@@ -1,12 +1,12 @@
 {
-  "name": "Categorie",
+  "name": "Fournisseur",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
     "validateUpsert": true
   },
   "properties": {
-    "libelle": {
+    "nom": {
       "type": "string",
       "required": true
     }
@@ -17,9 +17,12 @@
       "type": "hasMany",
       "model": "Vehicule",
       "foreignKey": "",
-      "options": {
-        "nestRemoting": true
-      }
+      "through": "Depannage"
+    },
+    "depannages": {
+      "type": "hasMany",
+      "model": "Depannage",
+      "foreignKey": ""
     }
   },
   "acls": [],
