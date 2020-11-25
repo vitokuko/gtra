@@ -53,6 +53,10 @@
     "dateLivraison": {
       "type": "date",
       "required": true
+    },
+    "dateImmobilisation": {
+      "type": "date",
+      "required": true
     }
   },
   "validations": [],
