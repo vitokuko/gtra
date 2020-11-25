@@ -37,6 +37,10 @@
     "visiteTechnique": {
       "type": "date",
       "required": true
+    },
+    "puissance": {
+      "type": "number",
+      "required": true
     }
   },
   "validations": [],

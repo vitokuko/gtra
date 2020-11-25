@@ -16,10 +16,7 @@
     "vehicules": {
       "type": "hasMany",
       "model": "Vehicule",
-      "foreignKey": "",
-      "options": {
-        "nestRemoting": true
-      }
+      "foreignKey": ""
     }
   },
   "acls": [],

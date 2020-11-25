@@ -16,18 +16,12 @@
     "vehicules": {
       "type": "hasMany",
       "model": "Vehicule",
-      "foreignKey": "",
-      "options": {
-        "nestRemoting": true
-      }
+      "foreignKey": ""
     },
     "marque": {
       "type": "belongsTo",
       "model": "Marque",
-      "foreignKey": "",
-      "options": {
-        "nestRemoting": true
-      }
+      "foreignKey": ""
     }
   },
   "acls": [],

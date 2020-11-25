@@ -60,18 +60,12 @@
     "vehicule": {
       "type": "belongsTo",
       "model": "Vehicule",
-      "foreignKey": "",
-      "options": {
-        "nestRemoting": true
-      }
+      "foreignKey": ""
     },
     "utilisateur": {
       "type": "belongsTo",
       "model": "Utilisateur",
-      "foreignKey": "",
-      "options": {
-        "nestRemoting": true
-      }
+      "foreignKey": ""
     }
   },
   "acls": [],

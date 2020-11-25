@@ -16,18 +16,12 @@
     "vehicules": {
       "type": "hasMany",
       "model": "Vehicule",
-      "foreignKey": "",
-      "options": {
-        "nestRemoting": true
-      }
+      "foreignKey": ""
     },
     "utilisateurs": {
       "type": "hasMany",
       "model": "Utilisateur",
-      "foreignKey": "",
-      "options": {
-        "nestRemoting": true
-      }
+      "foreignKey": ""
     }
   },
   "acls": [],

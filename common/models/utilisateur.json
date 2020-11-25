@@ -16,10 +16,16 @@
     },
     "telephone": {
       "type": "string",
-      "required": false
+      "required": true
     },
-    "typeTravail": {
-      "type": "string"
+    "email": {
+      "type": "string",
+      "required": true
+    },
+    "statut": {
+
+      "statut": "string",
+      "required": true
     },
     "actif": {
       "type": "boolean"
