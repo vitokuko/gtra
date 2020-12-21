@@ -1,5 +1,5 @@
 {
-  "name": "Modele",
+  "name": "Departement",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
@@ -12,22 +12,11 @@
     },
     "description": {
       "type": "string",
-      "required": true
+      "required": false
     }
   },
   "validations": [],
-  "relations": {
-    "vehicules": {
-      "type": "hasMany",
-      "model": "Vehicule",
-      "foreignKey": ""
-    },
-    "marque": {
-      "type": "belongsTo",
-      "model": "Marque",
-      "foreignKey": ""
-    }
-  },
+  "relations": {},
   "acls": [],
   "methods": {}
 }

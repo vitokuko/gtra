@@ -18,10 +18,6 @@
       "type": "string",
       "required": true
     },
-    "email": {
-      "type": "string",
-      "required": true
-    },
     "statut": {
       "type": "string",
       "required": true

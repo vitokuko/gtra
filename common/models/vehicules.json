@@ -30,6 +30,14 @@
       "type": "number",
       "required": true
     },
+    "coutAchat": {
+      "type": "number",
+      "required": true
+    },
+    "valeurNetteComptable": {
+      "type": "number",
+      "required": true
+    },
     "etat": {
       "type": "string",
       "required": true
