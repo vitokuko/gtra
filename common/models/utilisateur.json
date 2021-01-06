@@ -108,7 +108,7 @@
         "nestRemoting": true
       }
     },
-    "vehicules": {
+    "Vehicule": {
       "type": "hasMany",
       "model": "Vehicule",
       "foreignKey": "",

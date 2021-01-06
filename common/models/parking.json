@@ -17,7 +17,7 @@
   },
   "validations": [],
   "relations": {
-    "vehicules": {
+    "Vehicule": {
       "type": "hasMany",
       "model": "Vehicule",
       "foreignKey": ""

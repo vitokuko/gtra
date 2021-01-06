@@ -49,6 +49,10 @@
     "puissance": {
       "type": "number",
       "required": true
+    },
+    "description": {
+      "type": "string",
+      "required": false
     }
   },
   "validations": [],
